@@ -6,14 +6,16 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import done.mm.qa.base.TestBase;
-import done.mm.qa.pages.CreateMaster;
+
+import done.mm.qa.pages.LaunchPCOffering;
+import done.mm.qa.pages.UpdatePlayerCounter;
 import done.mm.qa.pages.LoginPages;
 
-public class CreateMasterTest extends TestBase {
-	CreateMaster po;
+public class UpdatePCTest extends TestBase {
+	UpdatePlayerCounter pco;
 	LoginPages loginPages;
 
-	public CreateMasterTest() {
+	public UpdatePCTest() {
 		super();
 	}
 
@@ -21,14 +23,14 @@ public class CreateMasterTest extends TestBase {
 	public void setup() throws InterruptedException {
 		initialization();
 		loginPages = new LoginPages();
-		po = new CreateMaster();
+		pco = new UpdatePlayerCounter();
 	}
 
 	@Test(invocationCount = 1)
 	public void createMasterTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
-		po.CreateMaster();
+		pco.Update();
 
 	}
 

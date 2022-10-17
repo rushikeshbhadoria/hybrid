@@ -6,15 +6,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import done.mm.qa.base.TestBase;
-import done.mm.qa.pages.CreateMaster;
-import done.mm.qa.pages.DeletePC;
+
+import done.mm.qa.pages.CreatePC;
 import done.mm.qa.pages.LoginPages;
 
-public class DeleteMasterTest extends TestBase {
-	DeletePC dp;
+public class CreatePCTest extends TestBase {
+	CreatePC po;
 	LoginPages loginPages;
 
-	public DeleteMasterTest() {
+	public CreatePCTest() {
 		super();
 	}
 
@@ -22,14 +22,14 @@ public class DeleteMasterTest extends TestBase {
 	public void setup() throws InterruptedException {
 		initialization();
 		loginPages = new LoginPages();
-		dp = new DeletePC();
+		po = new CreatePC();
 	}
 
 	@Test(invocationCount = 1)
 	public void createMasterTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
-		dp.delete_master();
+		po.createPC();
 
 	}
 

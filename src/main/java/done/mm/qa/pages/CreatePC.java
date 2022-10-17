@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import done.mm.qa.base.TestBase;
 
-public class CreateMaster extends TestBase {
+public class CreatePC extends TestBase {
 
 	@FindBy(how = How.XPATH, using = "//button[text()='Create New Player counter']")
 	WebElement CreatePC;
@@ -76,12 +76,12 @@ public class CreateMaster extends TestBase {
 	@FindBy(how = How.XPATH, using = "//button[text()='Save']")
 	WebElement submit;
 
-	public CreateMaster() {
+	public CreatePC() {
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public void CreateMaster() throws Exception {
+	public void createPC() throws Exception {
 		// create instance of Random class
 		Random rand = new Random();
 
