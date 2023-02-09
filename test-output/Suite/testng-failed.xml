@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="done.mm.qa.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="done.mm.qa.testcases.UpdatePCTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="createMasterTest"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.UpdatePCTest -->
+      <class name="done.mm.qa.testcases.UpdateTournamentTest">
+        <methods>
+          <include name="createTournamentTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.UpdateTournamentTest -->
+      <class name="done.mm.qa.testcases.LaunchPCSecondMarketTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="LaunchPCMarket"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.LaunchPCSecondMarketTest -->
+      <class name="done.mm.qa.testcases.CreateNewTournamentTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createTournamentTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.CreateNewTournamentTest -->
+      <class name="done.mm.qa.testcases.LaunchPCOfferingTest">
+        <methods>
+          <include name="LaunchPCO"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.LaunchPCOfferingTest -->
+      <class name="done.mm.qa.testcases.CreateNewPCTest">
+        <methods>
+          <include name="createMasterTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.CreateNewPCTest -->
+      <class name="done.mm.qa.testcases.CompletePCOTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createMasterTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.CompletePCOTest -->
+      <class name="done.mm.qa.testcases.CreateNewMatchTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="createNewMatchTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- done.mm.qa.testcases.CreateNewMatchTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
