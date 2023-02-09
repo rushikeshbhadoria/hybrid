@@ -14,7 +14,7 @@ import done.mm.qa.base.TestBase;
 
 public class CreateNewMatch extends TestBase {
 
-	@FindBy(how = How.XPATH, using = "//p[text()='Matches']")
+	@FindBy(how = How.XPATH, using = "//h6[text()='Matches']")
 	WebElement clickMatches;
 	
 	@FindBy(how = How.XPATH, using = "//button[text()='Create Matches']")
@@ -69,6 +69,7 @@ public class CreateNewMatch extends TestBase {
 	WebElement abbreviation;
 	
 	@FindBy(how = How.XPATH, using = "//option[text()='Select']")
+
 	WebElement clcikTournament;
 	
 	@FindBy(how = How.XPATH, using = "//option[text()='IPL']")
@@ -79,6 +80,16 @@ public class CreateNewMatch extends TestBase {
 	
 	@FindBy(how = How.XPATH, using = "//button[text()='Save']")
 	WebElement saveButton;
+	
+	
+	
+	
+
+
+	WebElement selectTournament;
+	
+	@FindBy(how = How.XPATH, using = "//div[1]/div[9]/div[1]/div[1]/button[2]")
+	WebElement updatetournamnet;
 	
 	
 	
@@ -138,6 +149,7 @@ public class CreateNewMatch extends TestBase {
 		
 }
 	
+
 	public void UpdateMatch() throws Exception {
 		
 		minimizeScreen(3);
@@ -182,3 +194,10 @@ public class CreateNewMatch extends TestBase {
 	
 	
 }
+
+	
+	
+	
+	
+}
+
