@@ -68,6 +68,22 @@ public class CreateNewMatch extends TestBase {
 	@FindBy(how = How.XPATH, using = "//input[@name='abbreviation']")
 	WebElement abbreviation;
 	
+	@FindBy(how = How.XPATH, using = "//option[text()='Select']")
+	WebElement clcikTournament;
+	
+	@FindBy(how = How.XPATH, using = "//option[text()='IPL']")
+	WebElement selTournament;
+	
+	@FindBy(how = How.XPATH, using = "//div[1]/div[9]/div[1]/div[1]/button[1]/*[name()='svg'][1]")
+	WebElement updateButton;
+	
+	@FindBy(how = How.XPATH, using = "//button[text()='Save']")
+	WebElement saveButton;
+	
+	
+	
+	
+
 	public CreateNewMatch() {
 		
 		PageFactory.initElements(driver, this);
@@ -104,7 +120,7 @@ public class CreateNewMatch extends TestBase {
 		sendKey(driver, time,"0230AM", 5);
 		Thread.sleep(2000);
 		
-		sendKey(driver, date,"12292022", 5);
+		sendKey(driver, date,"12292023", 5);
 		Thread.sleep(2000);
 		
 	
@@ -121,4 +137,48 @@ public class CreateNewMatch extends TestBase {
 		readMessege("Match created successfully.");
 		
 }
+	
+	public void UpdateMatch() throws Exception {
+		
+		minimizeScreen(3);
+		Thread.sleep(3000);
+		
+		clickOn(driver,clickMatches, 5);
+		Thread.sleep(2000);
+		
+		clickOn(driver,clcikTournament, 5);
+		Thread.sleep(2000);
+		
+		clickOn(driver,selTournament, 5);
+		Thread.sleep(3000);
+		
+		clickOn(driver,updateButton, 5);
+		Thread.sleep(2000);
+		
+		selectByVisibleText(team1, "Mumbai Indians");
+		Thread.sleep(2000);
+		selectByVisibleText(team2, "Royal Challenger Blore");
+		Thread.sleep(2000);
+		
+		scroll(0, 400);  
+		
+//		clearMethod(venue);
+//		Thread.sleep(2000);
+//		sendKey(driver,venue,"Banglore", 5);
+
+//		clearMethod(abbreviation);
+//		sendKey(driver,abbreviation,"MRC", 5);
+		
+		sendKey(driver, date,"12022023", 5);
+		sendKey(driver, time,"1800AM", 5);
+		
+		clickOn(driver,saveButton, 5);
+		
+//		Thread.sleep(3000);
+//		readMessege("Match updated successfully.");
+		
+	
+	}
+	
+	
 }
