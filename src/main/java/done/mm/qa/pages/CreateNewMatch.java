@@ -14,7 +14,7 @@ import done.mm.qa.base.TestBase;
 
 public class CreateNewMatch extends TestBase {
 
-	@FindBy(how = How.XPATH, using = "//p[text()='Matches']")
+	@FindBy(how = How.XPATH, using = "//h6[text()='Matches']")
 	WebElement clickMatches;
 	
 	@FindBy(how = How.XPATH, using = "//button[text()='Create Matches']")
@@ -67,6 +67,15 @@ public class CreateNewMatch extends TestBase {
 	
 	@FindBy(how = How.XPATH, using = "//input[@name='abbreviation']")
 	WebElement abbreviation;
+	
+	@FindBy(how = How.XPATH, using = "//option[text()='Select']")
+	WebElement selectTournament;
+	
+	@FindBy(how = How.XPATH, using = "//div[1]/div[9]/div[1]/div[1]/button[2]")
+	WebElement updatetournamnet;
+	
+	
+	
 	
 	public CreateNewMatch() {
 		
@@ -121,4 +130,16 @@ public class CreateNewMatch extends TestBase {
 		readMessege("Match created successfully.");
 		
 }
+	public void UpdateMatch() throws Exception {
+		
+		clickOn(driver,clickMatches, 5);
+		selectByVisibleText(clickTournament, "IPL");
+		
+		
+		
+	}
+	
+	
+	
+	
 }

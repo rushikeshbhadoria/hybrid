@@ -16,7 +16,7 @@ public class LoginPages extends TestBase {
 	@FindBy(how = How.XPATH, using = "//button[text()='Login']")
 	WebElement Loginwithgoogle;
 	
-	@FindBy(how = How.XPATH, using = "//span[text()='Continue with Google']")
+	@FindBy(how = How.XPATH, using = "//div[text()='Sign up with Google']")
 	WebElement ContinuewithGoogle;
 	
 	@FindBy(how = How.XPATH, using = "//input[@type='email']")
