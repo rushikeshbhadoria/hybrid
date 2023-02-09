@@ -130,14 +130,7 @@ public class CreateNewMatch extends TestBase {
 		readMessege("Match created successfully.");
 		
 }
-	public void UpdateMatch() throws Exception {
-		
-		clickOn(driver,clickMatches, 5);
-		selectByVisibleText(clickTournament, "IPL");
-		
-		
-		
-	}
+	
 	
 	
 	
