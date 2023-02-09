@@ -18,6 +18,7 @@ import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -133,6 +134,7 @@ public class TestBase {
 		return generatedString;
 	}
 
+	@SuppressWarnings("deprecation")
 	public static void initialization() throws InterruptedException {
 		String browserName = prop.getProperty("browser");
 
@@ -142,9 +144,13 @@ public class TestBase {
 
 		} else {
 
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Dell\\Desktop\\nu10\\chromedriver_win32\\chromedriver.exe");
-			driver = new ChromeDriver();
+//			System.setProperty("webdriver.chrome.driver",
+//					"C:\\Users\\Dell\\Desktop\\nu10\\chromedriver_win32\\chromedriver.exe");
+//			driver = new ChromeDriver();
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(chromeOptions);
 
 		}
 		e_driver = new EventFiringWebDriver(driver);
