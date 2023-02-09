@@ -1,11 +1,18 @@
 package done.mm.qa.base;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.Properties;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -51,34 +58,80 @@ public class TestBase {
 
 	}
 	
-	public static void sendKey(WebDriver driver, WebElement locator,String value, int timeout) {
+	
+	public static void clearMethod(WebElement locator) {
+		new WebDriverWait(driver, 1).ignoring(StaleElementReferenceException.class)
+				.until(ExpectedConditions.elementToBeClickable(locator));
+		locator.clear();
+
+	}
+	public static void sendKey(WebDriver driver, WebElement locator, String value, int timeout) {
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(locator));
 		locator.sendKeys(value);
 
 	}
-	
-	public static void selectByVisibleText( WebElement locator,String value) {
+
+	public static void selectByVisibleText(WebElement locator, String value) {
 		Select drpSelectCoin = new Select(locator);
 		drpSelectCoin.selectByVisibleText(value);
-		
 
 	}
-	
-	
-	public static void scroll( int start,int  end) {
+
+	public static void selectByIndex(WebElement locator, int value) {
+		Select drpSelectCoin = new Select(locator);
+		drpSelectCoin.selectByIndex(value);
+
+	}
+
+	public static void scroll(int start, int end) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("window.scrollBy("+start+","+end+")");
-		
+		js.executeScript("window.scrollBy(" + start + "," + end + ")");
 
 	}
-	public static void moveToElement( WebElement value ) {
+
+	public static void moveToElement(WebElement value) {
 		Actions actions = new Actions(driver);
 		actions.moveToElement(value).perform();
-		
 
 	}
-	
+
+	public static void minimizeScreen(int value) throws AWTException {
+
+		Robot robot = new Robot();
+		for (int i = 0; i <= value; i++) {
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_SUBTRACT);
+
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+		}
+
+	}
+
+	public static void readMessege(String msg) throws Exception {
+		Thread.sleep(2000);
+		if (driver.getPageSource().contains(msg)) {
+			System.out.println("ok");
+		}
+
+		else {
+			String errorMassege = driver
+					.findElement(By.xpath("//div[@class='MuiContainer-root MuiContainer-maxWidthXl css-1ekb41w']"))
+					.getText();
+
+			System.out.println(errorMassege);
+			throw new Exception(errorMassege);
+		}
+
+	}
+
+	public static String givenUsingApache_whenGeneratingRandomAlphabeticString_thenCorrect() {
+		String generatedString = RandomStringUtils.randomAlphabetic(10);
+
+		System.out.println(generatedString);
+		return generatedString;
+	}
 
 	public static void initialization() throws InterruptedException {
 		String browserName = prop.getProperty("browser");
@@ -86,10 +139,11 @@ public class TestBase {
 		if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\nu10\\geckodriver.exe");
 			driver = new FirefoxDriver();
-			
+
 		} else {
 
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\nu10\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\Users\\Dell\\Desktop\\nu10\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 		}
@@ -103,7 +157,7 @@ public class TestBase {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtil.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(prop.getProperty("url"));
 		Thread.sleep(500);
 
