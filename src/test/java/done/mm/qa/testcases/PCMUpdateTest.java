@@ -34,6 +34,7 @@ public class PCMUpdateTest extends TestBase {
 	@Test(invocationCount = 1)
 	public void statusupdate() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
+		
        pcm.UpdatePCSM();
 	
 

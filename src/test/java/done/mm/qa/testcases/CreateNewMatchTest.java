@@ -33,7 +33,7 @@ public class CreateNewMatchTest extends TestBase {
 		
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
-	cnm.CreateMatch();
+	    cnm.CreateMatch();
 
 	}
 
