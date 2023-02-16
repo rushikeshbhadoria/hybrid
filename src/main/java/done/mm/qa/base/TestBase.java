@@ -58,14 +58,27 @@ public class TestBase {
 		locator.click();
 
 	}
-	
-	
-	public static void clearMethod(WebElement locator) {
+
+	public static void clearMethodManual(WebElement locator) throws AWTException, InterruptedException {
+		clickOn(driver, locator, 10);
+		Robot robot = new Robot();
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		robot.keyPress(KeyEvent.VK_A);
+		Thread.sleep(1000);
+		robot.keyPress(KeyEvent.VK_DELETE);
+		Thread.sleep(1000);
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		robot.keyRelease(KeyEvent.VK_A);
+
+	}
+
+	public static void ClearMethod(WebElement locator) {
 		new WebDriverWait(driver, 1).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(locator));
 		locator.clear();
 
 	}
+
 	public static void sendKey(WebDriver driver, WebElement locator, String value, int timeout) {
 		new WebDriverWait(driver, timeout).ignoring(StaleElementReferenceException.class)
 				.until(ExpectedConditions.elementToBeClickable(locator));
@@ -118,7 +131,7 @@ public class TestBase {
 
 		else {
 			String errorMassege = driver
-					.findElement(By.xpath("//div[@class='MuiContainer-root MuiContainer-maxWidthXl css-1ekb41w']"))
+					.findElement(By.xpath("/html/body/div/div/main/div/div/div[3]/div/div/div[2]"))
 					.getText();
 
 			System.out.println(errorMassege);
@@ -147,7 +160,7 @@ public class TestBase {
 //			System.setProperty("webdriver.chrome.driver",
 //					"C:\\Users\\Dell\\Desktop\\nu10\\chromedriver_win32\\chromedriver.exe");
 //			driver = new ChromeDriver();
-			
+
 			ChromeOptions chromeOptions = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(chromeOptions);
