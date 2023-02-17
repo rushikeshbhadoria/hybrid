@@ -1,140 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-16T15:31:14 IST" name="Suite3" finished-at="2023-02-16T15:39:36 IST" duration-ms="501992">
+  <suite started-at="2023-02-17T11:02:19 IST" name="Default suite" finished-at="2023-02-17T11:03:25 IST" duration-ms="65823">
     <groups>
     </groups>
-    <test started-at="2023-02-16T15:31:14 IST" name="done.mm.qa.testcases" finished-at="2023-02-16T15:39:36 IST" duration-ms="501992">
-      <class name="done.mm.qa.testcases.PCOUpdateTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.PCOUpdateTest@4a668b6e]" started-at="2023-02-16T15:34:36 IST" name="setup" finished-at="2023-02-16T15:34:39 IST" duration-ms="2436" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="PCOUpdate()[pri:0, instance:done.mm.qa.testcases.PCOUpdateTest@4a668b6e]" started-at="2023-02-16T15:34:39 IST" name="PCOUpdate" finished-at="2023-02-16T15:35:45 IST" duration-ms="66737" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- PCOUpdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.PCOUpdateTest@4a668b6e]" started-at="2023-02-16T15:35:45 IST" name="tearDown" finished-at="2023-02-16T15:35:48 IST" duration-ms="2148" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.PCOUpdateTest -->
+    <test started-at="2023-02-17T11:02:19 IST" name="Default test" finished-at="2023-02-17T11:03:25 IST" duration-ms="65823">
       <class name="done.mm.qa.testcases.CreateNewPCTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@3e96bacf]" started-at="2023-02-16T15:31:14 IST" name="setup" finished-at="2023-02-16T15:31:19 IST" duration-ms="5300" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:02:19 IST" name="setup" finished-at="2023-02-17T11:02:26 IST" duration-ms="6948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewPc()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@3e96bacf]" started-at="2023-02-16T15:31:19 IST" name="createNewPc" finished-at="2023-02-16T15:32:17 IST" duration-ms="58337" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createNewPc -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@3e96bacf]" started-at="2023-02-16T15:32:17 IST" name="tearDown" finished-at="2023-02-16T15:32:20 IST" duration-ms="2188" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.CreateNewPCTest -->
-      <class name="done.mm.qa.testcases.LaunchPCOfferingTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.LaunchPCOfferingTest@4f67eb2a]" started-at="2023-02-16T15:33:28 IST" name="setup" finished-at="2023-02-16T15:33:31 IST" duration-ms="2529" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LaunchPCO()[pri:0, instance:done.mm.qa.testcases.LaunchPCOfferingTest@4f67eb2a]" started-at="2023-02-16T15:33:31 IST" name="LaunchPCO" finished-at="2023-02-16T15:34:34 IST" duration-ms="63417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LaunchPCO -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.LaunchPCOfferingTest@4f67eb2a]" started-at="2023-02-16T15:34:34 IST" name="tearDown" finished-at="2023-02-16T15:34:36 IST" duration-ms="2149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.LaunchPCOfferingTest -->
-      <class name="done.mm.qa.testcases.PCMUpdateTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.PCMUpdateTest@76f2bbc1]" started-at="2023-02-16T15:38:24 IST" name="setup" finished-at="2023-02-16T15:38:27 IST" duration-ms="3025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="statusupdate()[pri:0, instance:done.mm.qa.testcases.PCMUpdateTest@76f2bbc1]" started-at="2023-02-16T15:38:27 IST" name="statusupdate" finished-at="2023-02-16T15:39:34 IST" duration-ms="66193" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- statusupdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.PCMUpdateTest@76f2bbc1]" started-at="2023-02-16T15:39:34 IST" name="tearDown" finished-at="2023-02-16T15:39:36 IST" duration-ms="2141" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.PCMUpdateTest -->
-      <class name="done.mm.qa.testcases.PCOfferingCompleteTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.PCOfferingCompleteTest@78ffe6dc]" started-at="2023-02-16T15:36:40 IST" name="setup" finished-at="2023-02-16T15:36:43 IST" duration-ms="2256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="statusupdate()[pri:0, instance:done.mm.qa.testcases.PCOfferingCompleteTest@78ffe6dc]" started-at="2023-02-16T15:36:43 IST" name="statusupdate" finished-at="2023-02-16T15:37:32 IST" duration-ms="49124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- statusupdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.PCOfferingCompleteTest@78ffe6dc]" started-at="2023-02-16T15:37:32 IST" name="tearDown" finished-at="2023-02-16T15:37:34 IST" duration-ms="2134" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.PCOfferingCompleteTest -->
-      <class name="done.mm.qa.testcases.PCStatusLivPauseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.PCStatusLivPauseTest@5f683daf]" started-at="2023-02-16T15:35:48 IST" name="setup" finished-at="2023-02-16T15:35:50 IST" duration-ms="2315" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="statusupdate()[pri:0, instance:done.mm.qa.testcases.PCStatusLivPauseTest@5f683daf]" started-at="2023-02-16T15:35:50 IST" name="statusupdate" finished-at="2023-02-16T15:36:38 IST" duration-ms="48296" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- statusupdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.PCStatusLivPauseTest@5f683daf]" started-at="2023-02-16T15:36:38 IST" name="tearDown" finished-at="2023-02-16T15:36:40 IST" duration-ms="2161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.PCStatusLivPauseTest -->
-      <class name="done.mm.qa.testcases.UpdatePCTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.UpdatePCTest@1fb700ee]" started-at="2023-02-16T15:32:20 IST" name="setup" finished-at="2023-02-16T15:32:22 IST" duration-ms="2463" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="UpdateTest()[pri:0, instance:done.mm.qa.testcases.UpdatePCTest@1fb700ee]" started-at="2023-02-16T15:32:22 IST" name="UpdateTest" finished-at="2023-02-16T15:33:26 IST" duration-ms="63838" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpdateTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.UpdatePCTest@1fb700ee]" started-at="2023-02-16T15:33:26 IST" name="tearDown" finished-at="2023-02-16T15:33:28 IST" duration-ms="2186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.UpdatePCTest -->
-      <class name="done.mm.qa.testcases.LaunchPCSecondMarketTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:done.mm.qa.testcases.LaunchPCSecondMarketTest@8317c52]" started-at="2023-02-16T15:37:34 IST" name="setup" finished-at="2023-02-16T15:37:36 IST" duration-ms="2353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LaunchPCMTest()[pri:0, instance:done.mm.qa.testcases.LaunchPCSecondMarketTest@8317c52]" started-at="2023-02-16T15:37:36 IST" name="LaunchPCMTest" finished-at="2023-02-16T15:38:22 IST" duration-ms="46076" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="createNewPc()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:02:26 IST" name="createNewPc" finished-at="2023-02-17T11:03:22 IST" duration-ms="56274" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidArgumentException">
             <message>
-              <![CDATA[element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-v876rq" tabindex="0" type="button" style="width: 100%;">...</button> is not clickable at point (1883, 369). Other element would receive the click: <div style="display: flex; width: 100%; left: 0px; top: 0px; align-items: center; height: 100%; justify-content: center; position: fixed; z-index: 999999; background: rgba(0, 0, 0, 0.7); flex-direction: column;">...</div>
-  (Session info: chrome=110.0.5481.100)
+              <![CDATA[invalid argument: File not found : D:\SPQ\SPQAdminPanel\src\main\java\done\mm\qa\util\23.08.2022_16.07.43_REC.png
+  (Session info: chrome=109.0.5414.122)
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-LM7H92S', ip: '192.168.101.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-5AST0QG', ip: '192.168.109.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae8cd6870c627f29f0431c2009f124b, clickElement {id=13f382a4-6c18-41e7-b32a-f387938683a6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\DELL03~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3835/devtool..., se:cdpVersion: 110.0.5481.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (2ae8cd6870c627f29f0431c2009f124b)] -> xpath: //button[text()='Launch PC To Market']]
-Session ID: 2ae8cd6870c627f29f0431c2009f124b]]>
+Command: [d0c8ab657ce5c7207eb8f58beacff2f7, sendKeysToElement {id=508784d0-fa27-463e-936a-3c4d43b8a033, value=[Ljava.lang.CharSequence;@47248a48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54814/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d0c8ab657ce5c7207eb8f58beacff2f7)] -> xpath: //input[@name='mobileIcon']]
+Session ID: d0c8ab657ce5c7207eb8f58beacff2f7]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium css-v876rq" tabindex="0" type="button" style="width: 100%;">...</button> is not clickable at point (1883, 369). Other element would receive the click: <div style="display: flex; width: 100%; left: 0px; top: 0px; align-items: center; height: 100%; justify-content: center; position: fixed; z-index: 999999; background: rgba(0, 0, 0, 0.7); flex-direction: column;">...</div>
-  (Session info: chrome=110.0.5481.100)
+              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\SPQ\SPQAdminPanel\src\main\java\done\mm\qa\util\23.08.2022_16.07.43_REC.png
+  (Session info: chrome=109.0.5414.122)
 Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'DESKTOP-LM7H92S', ip: '192.168.101.3', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+System info: host: 'DESKTOP-5AST0QG', ip: '192.168.109.231', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2ae8cd6870c627f29f0431c2009f124b, clickElement {id=13f382a4-6c18-41e7-b32a-f387938683a6}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.100, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\DELL03~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:3835}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:3835/devtool..., se:cdpVersion: 110.0.5481.100, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (2ae8cd6870c627f29f0431c2009f124b)] -> xpath: //button[text()='Launch PC To Market']]
-Session ID: 2ae8cd6870c627f29f0431c2009f124b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+Command: [d0c8ab657ce5c7207eb8f58beacff2f7, sendKeysToElement {id=508784d0-fa27-463e-936a-3c4d43b8a033, value=[Ljava.lang.CharSequence;@47248a48}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.122, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54814}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54814/devtoo..., se:cdpVersion: 109.0.5414.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (d0c8ab657ce5c7207eb8f58beacff2f7)] -> xpath: //input[@name='mobileIcon']]
+Session ID: d0c8ab657ce5c7207eb8f58beacff2f7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -143,21 +47,25 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(Driver
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:107)
+at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:414)
-at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:427)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.sendKeys(EventFiringWebDriver.java:439)
+at jdk.internal.reflect.GeneratedMethodAccessor8.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
-at done.mm.qa.base.TestBase.clickOn(TestBase.java:58)
-at done.mm.qa.pages.LaunchPCSecMarket.LaunchPCSM(LaunchPCSecMarket.java:66)
-at done.mm.qa.testcases.LaunchPCSecondMarketTest.LaunchPCMTest(LaunchPCSecondMarketTest.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at jdk.proxy2/jdk.proxy2.$Proxy19.sendKeys(Unknown Source)
+at done.mm.qa.base.TestBase.sendKey(TestBase.java:85)
+at done.mm.qa.pages.CreateNewPCPage.CreatePC(CreateNewPCPage.java:126)
+at done.mm.qa.testcases.CreateNewPCTest.createNewPc(CreateNewPCTest.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
@@ -184,15 +92,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LaunchPCMTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.LaunchPCSecondMarketTest@8317c52]" started-at="2023-02-16T15:38:22 IST" name="tearDown" finished-at="2023-02-16T15:38:24 IST" duration-ms="2142" status="PASS">
+        </test-method> <!-- createNewPc -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:done.mm.qa.testcases.CreateNewPCTest@1be2019a]" started-at="2023-02-17T11:03:22 IST" name="tearDown" finished-at="2023-02-17T11:03:25 IST" duration-ms="2532" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- done.mm.qa.testcases.LaunchPCSecondMarketTest -->
-    </test> <!-- done.mm.qa.testcases -->
-  </suite> <!-- Suite3 -->
+      </class> <!-- done.mm.qa.testcases.CreateNewPCTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

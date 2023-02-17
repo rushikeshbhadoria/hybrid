@@ -146,6 +146,13 @@ public class TestBase {
 		System.out.println(generatedString);
 		return generatedString;
 	}
+	
+	public static String randomAddrivetion() {
+		String generatedString = RandomStringUtils.randomAlphabetic(3);
+
+		System.out.println(generatedString);
+		return generatedString;
+	}
 
 	@SuppressWarnings("deprecation")
 	public static void initialization() throws InterruptedException {

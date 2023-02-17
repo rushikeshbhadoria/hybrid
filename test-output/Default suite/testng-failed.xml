@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="done.mm.qa.testcases.PCOUpdateTest">
+      <class name="done.mm.qa.testcases.CreateNewPCTest">
         <methods>
-          <include name="PCOUpdate"/>
+          <include name="createNewPc"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- done.mm.qa.testcases.PCOUpdateTest -->
+      </class> <!-- done.mm.qa.testcases.CreateNewPCTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

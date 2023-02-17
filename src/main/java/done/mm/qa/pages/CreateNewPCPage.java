@@ -91,8 +91,8 @@ public class CreateNewPCPage extends TestBase {
 		String usernameGenerator = "username" + rand_int1;
 		String emailGenarator = "email" + rand_int1 + "@gamil.com";
 		
-		String generatedString = RandomStringUtils.randomAlphabetic(10);
-
+		String generatedString = "Z"+RandomStringUtils.randomAlphabetic(10);
+		String add= randomAddrivetion();
 	    System.out.println(generatedString);
 
 		clickOn(driver, CreatePC, 5);
@@ -101,9 +101,9 @@ public class CreateNewPCPage extends TestBase {
 
 		sendKey(driver, firstName, generatedString, 5);
 		sendKey(driver, lastName, "Auto", 5);
-		sendKey(driver, abbreviation, "WQE", 5);
+		sendKey(driver, abbreviation, add, 5);
 		selectByVisibleText(playerRoleId, "Bowler");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		scroll( 0,500);
 		
 		selectByVisibleText(country, "India");
@@ -113,7 +113,7 @@ public class CreateNewPCPage extends TestBase {
 				5);
 		
 		Thread.sleep(2000);
-		selectByVisibleText(tournamentId, "IPL");
+		selectByVisibleText(tournamentId, "Tournament1");
 		selectByVisibleText(team, "Royal Challenger Blore");
 		
 		selectByVisibleText(playerKey, "suryakumarsplayerkeys");
@@ -122,7 +122,7 @@ public class CreateNewPCPage extends TestBase {
 		Thread.sleep(2000);
 		sendKey(driver, totalSupply, "10000", 5);
 		sendKey(driver, houseWalletAddress, "0x5aC670D0A4074450b881A4E3bbf1fa7B4677b1DD", 5);
-		String path="D:\\SPQ\\SPQAdminPanel\\src\\main\\java\\done\\mm\\qa\\util\\23.08.2022_16.07.43_REC.png";
+		String path="C:\\Users\\Dell\\eclipse2-workspace\\SpqAdmin\\20230119_171752.jpg";
 		sendKey(driver, mobileIcon, path, 5);
 		sendKey(driver, webIcon, path, 5);
 		Thread.sleep(3000);
