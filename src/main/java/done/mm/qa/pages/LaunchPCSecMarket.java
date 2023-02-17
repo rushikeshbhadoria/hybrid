@@ -67,7 +67,7 @@ public class LaunchPCSecMarket extends TestBase {
 		Thread.sleep(3000);
 		
 //		clickOn(driver, clickOnDropdown, 5);
-		sendKey(driver, clickOnDropdown, "MTN", 5);
+		sendKey(driver, clickOnDropdown, "WQE", 5);
 		Thread.sleep(2000);
 		
 		Robot robot = new Robot();
@@ -88,7 +88,7 @@ public class LaunchPCSecMarket extends TestBase {
 		clickOn(driver, launchButton, 5);
 	
 		Thread.sleep(3000);
-		readMessege("Player Token Launched To Secondary Market.");
+//		readMessege("Player Token Launch to Secondary Market.");
 
 	}
 

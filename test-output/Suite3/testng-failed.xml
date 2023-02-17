@@ -6,69 +6,13 @@
   </listeners>
   <test thread-count="5" name="done.mm.qa.testcases(failed)">
     <classes>
-      <class name="done.mm.qa.testcases.DeactivateAndActivateMasterTest">
-        <methods>
-          <include name="ActivateDeactivateMaster"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.DeactivateAndActivateMasterTest -->
-      <class name="done.mm.qa.testcases.SetPrecisionTest">
+      <class name="done.mm.qa.testcases.LaunchPCSecondMarketTest">
         <methods>
           <include name="tearDown"/>
-          <include name="SetPrecision"/>
           <include name="setup"/>
+          <include name="LaunchPCMTest"/>
         </methods>
-      </class> <!-- done.mm.qa.testcases.SetPrecisionTest -->
-      <class name="done.mm.qa.testcases.CancelAllOrderTest">
-        <methods>
-          <include name="cancelOrderWithBrokerIdUsernameAssetTest"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.CancelAllOrderTest -->
-      <class name="done.mm.qa.testcases.CancelAllOrderBATest">
-        <methods>
-          <include name="canWithAssetBkIdTest"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.CancelAllOrderBATest -->
-      <class name="done.mm.qa.testcases.AddIpForBrokerTestq">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="addIpForBrokerTest"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.AddIpForBrokerTestq -->
-      <class name="done.mm.qa.testcases.ManualLegdeEntryTest">
-        <methods>
-          <include name="setup"/>
-          <include name="manualLegdeEntryTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.ManualLegdeEntryTest -->
-      <class name="done.mm.qa.testcases.CancelSingleOrderTest">
-        <methods>
-          <include name="cancelSingleOrderTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.CancelSingleOrderTest -->
-      <class name="done.mm.qa.testcases.CancelAllOrderBUTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="cancelOrderWithBrokerIdUsernameTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.CancelAllOrderBUTest -->
-      <class name="done.mm.qa.testcases.ChangeOrderDetailsTest">
-        <methods>
-          <include name="setup"/>
-          <include name="changeOrderDetailTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- done.mm.qa.testcases.ChangeOrderDetailsTest -->
+      </class> <!-- done.mm.qa.testcases.LaunchPCSecondMarketTest -->
     </classes>
   </test> <!-- done.mm.qa.testcases(failed) -->
 </suite> <!-- Failed suite [Suite3] -->

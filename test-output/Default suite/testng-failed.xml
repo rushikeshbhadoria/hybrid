@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="done.mm.qa.testcases.UpdateMatchTest">
+      <class name="done.mm.qa.testcases.PCOUpdateTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="createTournamentTest"/>
+          <include name="PCOUpdate"/>
           <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- done.mm.qa.testcases.UpdateMatchTest -->
+      </class> <!-- done.mm.qa.testcases.PCOUpdateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

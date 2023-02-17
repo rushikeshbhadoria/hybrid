@@ -101,7 +101,7 @@ public class CreateNewPCPage extends TestBase {
 
 		sendKey(driver, firstName, generatedString, 5);
 		sendKey(driver, lastName, "Auto", 5);
-		sendKey(driver, abbreviation, "SJD", 5);
+		sendKey(driver, abbreviation, "WQE", 5);
 		selectByVisibleText(playerRoleId, "Bowler");
 		Thread.sleep(2000);
 		scroll( 0,500);
@@ -125,8 +125,9 @@ public class CreateNewPCPage extends TestBase {
 		String path="D:\\SPQ\\SPQAdminPanel\\src\\main\\java\\done\\mm\\qa\\util\\23.08.2022_16.07.43_REC.png";
 		sendKey(driver, mobileIcon, path, 5);
 		sendKey(driver, webIcon, path, 5);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		clickOn(driver, submit, 5);
+		Thread.sleep(3000);
 		
 //		readMessege("Player counter created successfully.");
 		

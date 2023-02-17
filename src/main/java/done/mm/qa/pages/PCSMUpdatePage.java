@@ -57,25 +57,31 @@ public class PCSMUpdatePage extends TestBase {
 		Thread.sleep(5000);
 		clickOn(driver, update, 5);
 		Thread.sleep(5000);
-		clearMethod(buyprice);
-
+		
+		
+		clearMethodManual(buyprice);
 		Thread.sleep(500);
-		sendKey(driver, buyprice, "", 5);
-		clearMethod(sellprice);
-
-		sendKey(driver, sellprice, "", 5);
+		sendKey(driver, buyprice, "10", 5);
+		//ClearMethod(sellprice);
+	
+		clearMethodManual(sellprice);
+		sendKey(driver, sellprice, "10", 5);
 
 		Thread.sleep(2000);
 		scroll(0, 200);
-
-		clearMethod(maxbuy);
-		sendKey(driver, maxbuy, "", 5);
-		clearMethod(minbuy);
-		sendKey(driver, minbuy, "", 5);
+		
+		clearMethodManual(maxbuy);
+		sendKey(driver, maxbuy, "50", 5);
+		
+		clearMethodManual(minbuy);
+		sendKey(driver, minbuy, "1", 5);
 		Thread.sleep(2000);
 
-		sendKey(driver, maxsell, "", 5);
-		sendKey(driver, minsell, "", 5);
+		clearMethodManual(maxsell);
+		sendKey(driver, maxsell, "50", 5);
+		
+		clearMethodManual(minsell);
+		sendKey(driver, minsell, "1", 5);
 
 		clickOn(driver, updatePCM, 5);
 //		readMessege("Player Token Secondary Market Updated.");

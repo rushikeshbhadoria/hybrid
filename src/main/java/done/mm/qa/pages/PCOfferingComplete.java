@@ -54,10 +54,10 @@ public class PCOfferingComplete extends TestBase {
 //		WebElement element = driver.findElement(By.xpath("xpath_Of_Element"));                 
 //		je.executeScript("arguments[0].click();",updatePC);
 
-		Actions actions = new Actions(driver);
-		actions.contextClick(clickOnAction);
+//		Actions actions = new Actions(driver);
+//		actions.contextClick(clickOnAction);
 		
-//		clickOn(driver, clickOnAction, 10);
+
 		
 	
 		clickOn(driver, complete, 10);

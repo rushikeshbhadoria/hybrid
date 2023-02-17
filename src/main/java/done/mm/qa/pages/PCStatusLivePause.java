@@ -1,6 +1,5 @@
 package done.mm.qa.pages;
 
-import java.awt.AWTException;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -29,11 +28,16 @@ public class PCStatusLivePause extends TestBase {
 	@FindBy(how = How.XPATH, using = "//div[text()='Sarfraj Khan']")
 	WebElement PC;
 	
-	@FindBy(how = How.XPATH, using = "//*[@data-rowindex='0']//*[@data-testid='PlayCircleOutlineIcon']")
+	@FindBy(how = How.XPATH, using = "//*[@data-rowindex='0']//*[@data-testid='PauseCircleOutlineIcon']")
 	WebElement clickOnPause;
 	
 	@FindBy(how = How.XPATH, using = "//button[text()='Live']")
 	WebElement live;
+	
+	@FindBy(how = How.XPATH, using = "//button[text()='Paused']")
+	WebElement pause;
+	
+	
 
 	
 	public PCStatusLivePause() {
@@ -41,7 +45,7 @@ public class PCStatusLivePause extends TestBase {
 
 	}
 
-	public void ChangeStaus() throws InterruptedException, AWTException {
+	public void ChangeStaus() throws Exception {
 		
                
 		minimizeScreen(3);
@@ -64,15 +68,15 @@ public class PCStatusLivePause extends TestBase {
 //		clickOn(driver, StatusChange, 10);
 //		clickOn(driver, pause, 10);
 		
-		Actions actions = new Actions(driver);
-		actions.contextClick(clickOnAction);
+//		Actions actions = new Actions(driver);
+//		actions.contextClick(clickOnAction);
 		
     	clickOn(driver, clickOnPause, 10);
     	
-    	clickOn(driver, live, 10);
+    	clickOn(driver, pause, 10);
 		
 		
-		
+    	readMessege("Player Token Offering Status Updated Successfully.");
 	
 	
 

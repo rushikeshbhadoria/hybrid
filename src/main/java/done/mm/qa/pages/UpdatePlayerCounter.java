@@ -89,22 +89,23 @@ public class UpdatePlayerCounter extends TestBase {
 //		actions.contextClick(clickOnAction);
 //		Thread.sleep(2000);
         
-        clickOn(driver, clickOnAction, 5);
-        clickOn(driver, clickOnAction, 5);
-        Thread.sleep(2000);
+//        clickOn(driver, clickOnAction, 5);
+//        clickOn(driver, clickOnAction, 5);
+//        Thread.sleep(2000);
 		
 		clickOn(driver, updatePC, 5);
 		
-		selectByVisibleText(tournamentId, "IPL");
-		selectByVisibleText(team, "Royal Challenger Blore");
+//		selectByVisibleText(tournamentId, "IPL");
+		Thread.sleep(2000);
+//		selectByVisibleText(team, "Royal Challenger Blore");
 		
-		selectByVisibleText(playerKey, "suryakumarsplayerkeys");
+//		selectByVisibleText(playerKey, "suryakumarsplayerkeys");
 		
-		clearMethod(aboutplayer);
-		sendKey(driver, aboutplayer, "", 5);
+		clearMethodManual(aboutplayer);
+		sendKey(driver, aboutplayer, "Right ahnd batsman and bowler.", 5);
 		
-		clearMethod(totalsupply);
-		sendKey(driver, totalsupply, "", 5);
+		clearMethodManual(totalsupply);
+		sendKey(driver, totalsupply, "5000", 5);
 
 
 		Thread.sleep(2000);
@@ -112,9 +113,8 @@ public class UpdatePlayerCounter extends TestBase {
 		clickOn(driver, saveButton, 5);
 		Thread.sleep(5000);
 		readMessege("Player Token Updated Successfully.");
-//		clickOn(driver, mintButton, 5);
-	
-		Thread.sleep(5000);
+		clickOn(driver, mintButton, 5);
+		Thread.sleep(8000);
 
 	}
 

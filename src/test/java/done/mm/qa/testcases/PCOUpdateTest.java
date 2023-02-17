@@ -31,7 +31,7 @@ public class PCOUpdateTest extends TestBase {
 	}
 
 	@Test(invocationCount = 1)
-	public void statusupdate() throws Exception {
+	public void PCOUpdate() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
 		pls.UpdatePCO();

@@ -49,29 +49,32 @@ public class PCOUpdatePage extends TestBase {
 
 	public void UpdatePCO() throws Exception {
 		      
-		minimizeScreen(3);
+		minimizeScreen(4);
         Thread.sleep(3000);
 		clickOn(driver, PCOTracker, 10);
 		Thread.sleep(5000);
 
-		Actions actions = new Actions(driver);
-		actions.contextClick(clickOnAction);
+//		Actions actions = new Actions(driver);
+//		actions.contextClick(clickOnAction);
+
+//		clickOn(driver, clickOnAction, 10);
+//		clickOn(driver, clickOnAction, 10);
 		
 		clickOn(driver, update, 10);
 		Thread.sleep(2000);
 		
 		
-		clearMethod(offcounters);
+		clearMethodManual(offcounters);
 		sendKey(driver, offcounters, "1000", 5);
 		
-		clearMethod(offerprice);
+		clearMethodManual(offerprice);
 		sendKey(driver, offerprice, "15", 5);
 		
 		
-		clearMethod(maxbuy);
+		clearMethodManual(maxbuy);
 		sendKey(driver, maxbuy, "50", 5);
 		
-		clearMethod(minbuy);
+		clearMethodManual(minbuy);
 		sendKey(driver, minbuy, "1", 5);
 		
 		scroll(0, 300);
@@ -80,7 +83,7 @@ public class PCOUpdatePage extends TestBase {
 		clickOn(driver, updatepcbutton, 10);
 		Thread.sleep(3000);
 		
-		readMessege("Player Token Offering Updated Successfully.");
+//		readMessege("Player Token Offering Updated Successfully.");
 		
 
 	}

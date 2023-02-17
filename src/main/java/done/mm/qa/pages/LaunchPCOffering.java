@@ -65,7 +65,7 @@ public class LaunchPCOffering extends TestBase {
 		clickOn(driver, createOffering, 5);
 		Thread.sleep(2000);
 		
-		sendKey(driver, clickOnDropdown, "SJD", 5);
+		sendKey(driver, clickOnDropdown, "WQE", 5);
 		
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_DOWN);
@@ -78,12 +78,12 @@ public class LaunchPCOffering extends TestBase {
 		sendKey(driver, miniPurchase, "1", 5);
 		
 		
-		sendKey(driver, startDate, "15022023", 5);
+		sendKey(driver, startDate, "16022023", 5);
 		Thread.sleep(5000);
 		sendKey(driver, endDate,"20022023", 5);
 		
 		
-//		clickOn(driver, launchButton, 5);
+		clickOn(driver, launchButton, 5);
 	
 		Thread.sleep(5000);
 

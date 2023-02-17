@@ -28,7 +28,7 @@ public class LaunchPCSecondMarketTest extends TestBase {
 	}
 
 	@Test(invocationCount = 1)
-	public void createMasterTest() throws Exception {
+	public void LaunchPCMTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
 		pco.LaunchPCSM();

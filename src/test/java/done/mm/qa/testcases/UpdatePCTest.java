@@ -27,7 +27,7 @@ public class UpdatePCTest extends TestBase {
 	}
 
 	@Test(invocationCount = 1)
-	public void createMasterTest() throws Exception {
+	public void UpdateTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 
 		pco.Update();
