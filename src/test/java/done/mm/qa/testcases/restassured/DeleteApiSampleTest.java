@@ -1,4 +1,4 @@
-package done.mm.qa.testcases;
+package done.mm.qa.testcases.restassured;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,19 +9,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import done.mm.qa.base.DbConnectionAndRestAssured_TestBase;
 import done.mm.qa.base.TestBase;
 
 import done.mm.qa.pages.CreatePC;
-import done.mm.qa.pages.DbConnectionAndRestAssured;
+
 import done.mm.qa.pages.LoginPages;
 import done.mm.qa.util.TestUtil;
+import stepDefinations.DeleteApiSample;
 
-public class DeleteApiSample extends TestBase {
-	CreatePC po;
-	LoginPages loginPages;
+public class DeleteApiSampleTest extends TestBase {
+	DeleteApiSample po = new DeleteApiSample();
 	Logger log = Logger.getLogger(LoginPages.class);
 
-	public DeleteApiSample() {
+	public DeleteApiSampleTest() {
 		super();
 	}
 
@@ -32,19 +33,7 @@ public class DeleteApiSample extends TestBase {
 
 	@Test(invocationCount = 1)
 	public void Delete() throws Exception {
-
-		String pathurl1 = "/v1/tournaments";
-
-		String baseurl1 = "https://sportapi-qa.sportiqo.com";
-
-		// Add headers to the map
-		Map<String, String> headers = new HashMap<>();
-		headers.put("Authorization", TestUtil.token);
-		headers.put("Content-Type", "application/json");
-		headers.put("accept", "application/json");
-
-		String res = DbConnectionAndRestAssured.DeleteApiClient(headers, baseurl1, pathurl1);
-//		System.out.println(res);
+		po.DeleteApiSampleMethod();
 	}
 
 	@AfterClass

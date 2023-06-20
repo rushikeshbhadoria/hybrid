@@ -1,37 +1,36 @@
-package done.mm.qa.testcases;
+package stepDefinations;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.nio.charset.Charset;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
-import org.apache.log4j.Logger;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
+import done.mm.qa.base.DbConnectionAndRestAssured_TestBase;
 import done.mm.qa.base.TestBase;
-
-import done.mm.qa.pages.CreatePC;
-import done.mm.qa.pages.DbConnectionAndRestAssured;
-import done.mm.qa.pages.LoginPages;
 import done.mm.qa.util.TestUtil;
 
 public class PatchApiSample extends TestBase {
-	CreatePC po;
-	LoginPages loginPages;
-	Logger log = Logger.getLogger(LoginPages.class);
 
 	public PatchApiSample() {
-		super();
-	}
-
-	@BeforeMethod
-	public void setup() throws InterruptedException {
 
 	}
 
-	@Test(invocationCount = 1)
-	public void Patch() throws Exception {
+	public void patchApiSampleMethod() throws Exception {
 
 		String pathurl1 = "/v1/tournaments";
 
@@ -51,12 +50,8 @@ public class PatchApiSample extends TestBase {
 				+ "  \"tournamentKey\": \"DLF\",\r\n" + "  \"endDate\": \"2023-06-19\",\r\n"
 				+ "  \"startDate\": \"2023-06-19\"\r\n" + "}";
 
-		String res = DbConnectionAndRestAssured.PatchApiClient(headers, baseurl1, pathurl1, body1);
+		String res = DbConnectionAndRestAssured_TestBase.PatchApiClient(headers, baseurl1, pathurl1, body1);
 //		System.out.println(res);
 	}
 
-	@AfterClass
-	public void tearDown() throws InterruptedException {
-
-	}
 }

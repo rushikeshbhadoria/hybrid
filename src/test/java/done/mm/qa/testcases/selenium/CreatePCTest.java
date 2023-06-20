@@ -1,4 +1,4 @@
-package done.mm.qa.testcases;
+package done.mm.qa.testcases.selenium;
 
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterClass;

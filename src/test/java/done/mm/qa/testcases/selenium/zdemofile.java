@@ -1,4 +1,4 @@
-package done.mm.qa.testcases;
+package done.mm.qa.testcases.selenium;
 
 import static io.restassured.RestAssured.given;
 
