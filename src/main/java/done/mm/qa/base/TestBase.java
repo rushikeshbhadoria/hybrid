@@ -40,7 +40,7 @@ public class TestBase {
 	public static WebEventListener eventListener;
 
 	public TestBase() {
-		try {
+		try{
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
 					System.getProperty("user.dir") + "/src/test/java/done/mm/qa/testcases/" + "/config.properties");
@@ -122,6 +122,19 @@ public class TestBase {
 		}
 
 	}
+	
+	public static void maximizeScreen(int value) throws AWTException {
+
+		Robot robot = new Robot();
+		for (int i = 0; i <= value; i++) {
+			robot.keyPress(KeyEvent.VK_CONTROL);
+			robot.keyPress(KeyEvent.VK_ADD);
+
+			robot.keyRelease(KeyEvent.VK_CONTROL);
+			robot.keyRelease(KeyEvent.VK_ADD);
+		}
+
+	}
 
 	public static void readMessege(String msg) throws Exception {
 		Thread.sleep(2000);
@@ -170,6 +183,7 @@ public class TestBase {
 
 			ChromeOptions chromeOptions = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
+			chromeOptions.addArguments("--remote-allow-origins=*");
 			driver = new ChromeDriver(chromeOptions);
 
 		}

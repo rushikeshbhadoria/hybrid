@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="done.mm.qa.testcases(failed)">
     <classes>
-      <class name="done.mm.qa.testcases.LaunchPCSecondMarketTest">
+      <class name="done.mm.qa.testcases.CreatePCTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="LaunchPCMTest"/>
+          <include name="tearDown"/>
+          <include name="createMasterTest"/>
         </methods>
-      </class> <!-- done.mm.qa.testcases.LaunchPCSecondMarketTest -->
+      </class> <!-- done.mm.qa.testcases.CreatePCTest -->
     </classes>
   </test> <!-- done.mm.qa.testcases(failed) -->
 </suite> <!-- Failed suite [Suite3] -->

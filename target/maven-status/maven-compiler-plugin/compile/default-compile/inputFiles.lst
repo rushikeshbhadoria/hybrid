@@ -1,8 +1,7 @@
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\pages\LoginPages.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\util\TestUtil.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\util\WebEventListener.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\pages\ManualLegdeEntry.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\pages\AddIpForBroker.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\base\TestBase.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\pages\CreateMaster.java
-C:\Users\Dell\eclipse2-workspace\CSXAdminPanel\src\main\java\done\mm\qa\ExtentReportListner\ExtentReporterNG.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\pages\CreatePC.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\base\TestBase.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\util\WebEventListener.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\pages\LoginPages.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\ExtentReportListner\ExtentReporterNG.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\pages\DbConnectionAndRestAssured.java
+C:\Users\Dell\eclipse2-workspace\SportFaction\src\main\java\done\mm\qa\util\TestUtil.java
