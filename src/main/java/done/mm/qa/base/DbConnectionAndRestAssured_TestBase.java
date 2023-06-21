@@ -1,5 +1,6 @@
 package done.mm.qa.base;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -8,6 +9,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Map;
+import java.util.Properties;
 
 import org.json.simple.JSONObject;
 import org.openqa.selenium.WebElement;
@@ -19,6 +21,7 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.parsing.Parser;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -130,5 +133,24 @@ public class DbConnectionAndRestAssured_TestBase extends TestBase {
 		return responseString;
 
 	}
+	
+	public static String getGlobalValue(String key) throws IOException
+	{
+		Properties prop =new Properties();
+		FileInputStream fis =new FileInputStream("src\\test\\java\\resource\\global.properties");
+		prop.load(fis);
+		return prop.getProperty(key);
+	//String signature=getGlobalValue("gobal key name");
+		
+		
+	}
+	
+	
+	public String getJsonPath(String response,String key)
+	{
+		JsonPath   js = new JsonPath(response);
+		return js.get(key).toString();
+	}
+}
 
 }
