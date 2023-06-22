@@ -9,40 +9,51 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite3</th></tr>
-<tr><td><a href="#t0">done.mm.qa.testcases</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">121</td><td></td><td></td></tr>
+<tr><td><a href="#t0">done.mm.qa.testcases</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,957</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite3</th></tr></tbody><tbody id="t0"><tr><th colspan="4">done.mm.qa.testcases &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">done.mm.qa.testcases.selenium.CreatePCTest</td><td><a href="#m0">setup</a></td><td rowspan="1">1687427629252</td><td rowspan="1">71</td></tr><tr><th colspan="4">done.mm.qa.testcases &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">done.mm.qa.testcases.selenium.CreatePCTest</td><td><a href="#m1">tearDown</a></td><td rowspan="1">1687427629336</td><td rowspan="1">-1687427629336</td></tr><tr><th colspan="4">done.mm.qa.testcases &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">done.mm.qa.testcases.selenium.CreatePCTest</td><td><a href="#m2">createPcTest</a></td><td rowspan="1">1687427629335</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite3</th></tr></tbody><tbody id="t0"><tr><th colspan="4">done.mm.qa.testcases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">done.mm.qa.testcases.selenium.CreatePCTest</td><td><a href="#m0">createPcTest</a></td><td rowspan="1">1687434059527</td><td rowspan="1">28500</td></tr></tbody>
 </table>
-<h2>done.mm.qa.testcases</h2><h3 id="m0">done.mm.qa.testcases.selenium.CreatePCTest#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
+<h2>done.mm.qa.testcases</h2><h3 id="m0">done.mm.qa.testcases.selenium.CreatePCTest#createPcTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[text()=&apos;Sign up with Google&apos;]&apos; (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at done.mm.qa.base.TestBase.clickOn(TestBase.java:57)
+	at done.mm.qa.pages.LoginPages.Login(LoginPages.java:55)
+	at done.mm.qa.testcases.selenium.CreatePCTest.createPcTest(CreatePCTest.java:36)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Sign up with Google&apos;]&quot;}
+  (Session info: headless chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
 System info: host: &apos;DESKTOP-5AST0QG&apos;, ip: &apos;192.168.40.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
-	at java.util.Optional.orElseGet(Optional.java:267)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
-	at done.mm.qa.base.TestBase.initialization(TestBase.java:182)
-	at done.mm.qa.testcases.selenium.CreatePCTest.setup(CreatePCTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">done.mm.qa.testcases.selenium.CreatePCTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">done.mm.qa.testcases.selenium.CreatePCTest#createPcTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-5AST0QG&apos;, ip: &apos;192.168.40.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
-	at java.util.Optional.orElseGet(Optional.java:267)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
-	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
-	at done.mm.qa.base.TestBase.initialization(TestBase.java:182)
-	at done.mm.qa.testcases.selenium.CreatePCTest.setup(CreatePCTest.java:25)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8899657025138f17b90c726244fe11c3, findElement {using=xpath, value=//div[text()=&apos;Sign up with Google&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52123/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8899657025138f17b90c726244fe11c3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
+	at com.sun.proxy.$Proxy10.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 35 more
+... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

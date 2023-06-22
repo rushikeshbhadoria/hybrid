@@ -1,12 +1,19 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 1.724 s <<< FAILURE! - in TestSuite
-setup(done.mm.qa.testcases.selenium.CreatePCTest)  Time elapsed: 1.258 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 43.251 s <<< FAILURE! - in TestSuite
+createPcTest(done.mm.qa.testcases.selenium.CreatePCTest)  Time elapsed: 28.51 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //div[text()='Sign up with Google']' (tried for 5 second(s) with 500 milliseconds interval)
+	at done.mm.qa.testcases.selenium.CreatePCTest.createPcTest(CreatePCTest.java:36)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sign up with Google']"}
+  (Session info: headless chrome=114.0.5735.134)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.0.0', revision: '3a21814679'
 System info: host: 'DESKTOP-5AST0QG', ip: '192.168.40.2', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
-Driver info: driver.version: FirefoxDriver
-	at done.mm.qa.testcases.selenium.CreatePCTest.setup(CreatePCTest.java:25)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8899657025138f17b90c726244fe11c3, findElement {using=xpath, value=//div[text()='Sign up with Google']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.134, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52123}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52123/devtoo..., se:cdpVersion: 114.0.5735.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8899657025138f17b90c726244fe11c3
+	at done.mm.qa.testcases.selenium.CreatePCTest.createPcTest(CreatePCTest.java:36)
 

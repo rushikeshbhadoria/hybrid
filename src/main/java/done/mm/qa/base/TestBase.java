@@ -190,6 +190,10 @@ public class TestBase {
 			ChromeOptions chromeOptions = new ChromeOptions();
 			WebDriverManager.chromedriver().setup();
 			chromeOptions.addArguments("--remote-allow-origins=*");
+
+			if (browserName.contains("headless")) {
+				chromeOptions.addArguments("headless");
+			}
 			driver = new ChromeDriver(chromeOptions);
 
 		}
