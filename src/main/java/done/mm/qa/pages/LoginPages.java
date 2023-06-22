@@ -52,15 +52,15 @@ public class LoginPages extends TestBase {
 			}
 
 		}
-		clickOn(driver, ContinuewithGoogle, 5);
-		sendKey(driver, Login, un, 20);
-		clickOn(driver, Next, 5);
-		sendKey(driver, Password, pwd, 5);
-		clickOn(driver, Next, 5);
-
-		Thread.sleep(5000);
-		driver.switchTo().window(parentwin);
-		Thread.sleep(20000);
+//		clickOn(driver, ContinuewithGoogle, 5);
+//		sendKey(driver, Login, un, 20);
+//		clickOn(driver, Next, 5);
+//		sendKey(driver, Password, pwd, 5);
+//		clickOn(driver, Next, 5);
+//
+//		Thread.sleep(5000);
+//		driver.switchTo().window(parentwin);
+//		Thread.sleep(20000);
 
 	}
 

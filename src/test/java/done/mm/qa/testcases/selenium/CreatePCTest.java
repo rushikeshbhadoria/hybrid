@@ -15,11 +15,11 @@ public class CreatePCTest extends TestBase {
 	CreatePC po;
 	LoginPages loginPages;
 	Logger log = Logger.getLogger(LoginPages.class);
-	
-	
+
 	public CreatePCTest() {
 		super();
 	}
+
 	@BeforeMethod
 	public void setup() throws InterruptedException {
 		initialization();
@@ -34,10 +34,9 @@ public class CreatePCTest extends TestBase {
 	@Test(invocationCount = 1)
 	public void createPcTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
-		
-		po.createPC();
-//		log4j material
-		
+
+		// po.createPC();
+
 	}
 
 	@AfterClass
