@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite3]" guice-stage="DEVELOPMENT" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite3]">
   <listeners>
     <listener class-name="done.mm.qa.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="done.mm.qa.testcases(failed)" verbose="0">
+  <test thread-count="5" verbose="0" name="done.mm.qa.testcases(failed)">
     <classes>
-      <class name="done.mm.qa.testcases.CreatePCTest">
+      <class name="done.mm.qa.testcases.selenium.CreatePCTest">
         <methods>
+          <include name="createPcTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="createMasterTest"/>
         </methods>
-      </class> <!-- done.mm.qa.testcases.CreatePCTest -->
+      </class> <!-- done.mm.qa.testcases.selenium.CreatePCTest -->
     </classes>
   </test> <!-- done.mm.qa.testcases(failed) -->
 </suite> <!-- Failed suite [Suite3] -->

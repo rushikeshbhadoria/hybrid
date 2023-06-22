@@ -6,7 +6,7 @@
 	</listeners>
 	<test name="done.mm.qa.testcases">
 		<classes>
-			<class name="done.mm.qa.testcases.selenium.CreatePCTest" />
+			<class name="done.mm.qa.testcases.restassured.GetApiSampleTest" />
 
 
 		</classes>

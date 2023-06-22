@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite3" class="navigator-link">
-              <span class="suite-name border-failed">Suite3</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite3">
+              <span class="suite-name border-skipped">Suite3</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite3">
                     <span>C:\Users\Dell\eclipse2-workspace\SportFaction\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite3">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite3">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite3">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite3">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite3">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite3" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite3">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite3" class="hide-methods failed suite-Suite3"> (hide)</a> <!-- hide-methods failed suite-Suite3 -->
-                      <a href="#" panel-name="suite-Suite3" class="show-methods failed suite-Suite3"> (show)</a> <!-- show-methods failed suite-Suite3 -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite3" class="hide-methods skipped suite-Suite3"> (hide)</a> <!-- hide-methods skipped suite-Suite3 -->
+                      <a href="#" panel-name="suite-Suite3" class="show-methods skipped suite-Suite3"> (show)</a> <!-- show-methods skipped suite-Suite3 -->
                     </span>
-                    <div class="method-list-content failed suite-Suite3">
+                    <div class="method-list-content skipped suite-Suite3">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite3" title="done.mm.qa.testcases.CreatePCTest" class="method navigator-link" hash-for-method="createMasterTest">createMasterTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite3" title="done.mm.qa.testcases.selenium.CreatePCTest" hash-for-method="createPcTest">createPcTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite3 -->
+                    </div> <!-- method-list-content skipped suite-Suite3 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,64 +119,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite3" class="panel Suite3">
-          <div class="suite-Suite3-class-failed">
+          <div class="suite-Suite3-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">done.mm.qa.testcases.CreatePCTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">done.mm.qa.testcases.selenium.CreatePCTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createMasterTest">
-                  </a> <!-- createMasterTest -->
-                  <span class="method-name">createMasterTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[text()=&apos;Sign up with Google&apos;]&apos; (tried for 5 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at done.mm.qa.base.TestBase.clickOn(TestBase.java:57)
-	at done.mm.qa.pages.LoginPages.Login(LoginPages.java:55)
-	at done.mm.qa.testcases.CreatePCTest.createMasterTest(CreatePCTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[text()=&apos;Sign up with Google&apos;]&quot;}
-  (Session info: chrome=114.0.5735.110)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+                  <a name="createPcTest">
+                  </a> <!-- createPcTest -->
+                  <span class="method-name">createPcTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
 Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;DESKTOP-5AST0QG&apos;, ip: &apos;192.168.208.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [57df9a676f8c532a3f3b6c2ee5a115f2, findElement {using=xpath, value=//div[text()=&apos;Sign up with Google&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.110, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Dell\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58885/devtoo..., se:cdpVersion: 114.0.5735.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 57df9a676f8c532a3f3b6c2ee5a115f2
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:115)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:204)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 35 more
-... Removed 40 stack frames
+System info: host: &apos;DESKTOP-5AST0QG&apos;, ip: &apos;192.168.40.2&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:95)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:189)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:179)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:232)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:164)
+	at done.mm.qa.base.TestBase.initialization(TestBase.java:182)
+	at done.mm.qa.testcases.selenium.CreatePCTest.setup(CreatePCTest.java:25)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite3-class-failed -->
+          </div> <!-- suite-Suite3-class-skipped -->
         </div> <!-- panel Suite3 -->
         <div panel-name="test-xml-Suite3" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -186,13 +159,13 @@ Session ID: 57df9a676f8c532a3f3b6c2ee5a115f2
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite3&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite3&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;done.mm.qa.ExtentReportListner.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;done.mm.qa.testcases&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;done.mm.qa.testcases&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;done.mm.qa.testcases.CreatePCTest&quot;/&gt;
+      &lt;class name=&quot;done.mm.qa.testcases.selenium.CreatePCTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- done.mm.qa.testcases --&gt;
 &lt;/suite&gt; &lt;!-- Suite3 --&gt;
@@ -234,14 +207,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createMasterTest')
-data.setCell(0, 2, 'done.mm.qa.testcases.CreatePCTest')
-data.setCell(0, 3, 28622);
+data.setCell(0, 1, 'createPcTest')
+data.setCell(0, 2, 'done.mm.qa.testcases.selenium.CreatePCTest')
+data.setCell(0, 3, 0);
 window.suiteTableData['Suite3']= { tableData: data, tableDiv: 'times-div-Suite3'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite3">
               </div> <!-- times-div-Suite3 -->
             </div> <!-- times-div -->
@@ -267,20 +240,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">done.mm.qa.testcases.CreatePCTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">done.mm.qa.testcases.selenium.CreatePCTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">createMasterTest</span>
-                <span class="method-start">16443 ms</span>
+                <span class="method-name">createPcTest</span>
+                <span class="method-start">83 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">45073 ms</span>
+                <span class="method-start">84 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

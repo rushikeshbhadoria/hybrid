@@ -40,10 +40,10 @@ public class TestBase {
 	public static WebEventListener eventListener;
 
 	public TestBase() {
-		try{
+		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "/src/test/java/done/mm/qa/testcases/" + "/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")
+					+ "/src/test/java/done/mm/qa/testcases/selenium" + "/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -122,7 +122,7 @@ public class TestBase {
 		}
 
 	}
-	
+
 	public static void maximizeScreen(int value) throws AWTException {
 
 		Robot robot = new Robot();
@@ -143,8 +143,7 @@ public class TestBase {
 		}
 
 		else {
-			String errorMassege = driver
-					.findElement(By.xpath("/html/body/div/div/main/div/div/div[3]/div/div/div[2]"))
+			String errorMassege = driver.findElement(By.xpath("/html/body/div/div/main/div/div/div[3]/div/div/div[2]"))
 					.getText();
 
 			System.out.println(errorMassege);
@@ -159,19 +158,24 @@ public class TestBase {
 		System.out.println(generatedString);
 		return generatedString;
 	}
-	
+
 	public static String randomAddrivetion() {
 		String generatedString = RandomStringUtils.randomAlphabetic(3);
 
 		System.out.println(generatedString);
 		return generatedString;
 	}
-	
-	
 
 	@SuppressWarnings("deprecation")
 	public static void initialization() throws InterruptedException {
-		String browserName = prop.getProperty("browser");
+		String browserName;
+		if (System.getProperty("browserName") != null) {
+			browserName = System.getProperty("browserName");
+		} else {
+			browserName = prop.getProperty("browser");
+		}
+
+		// String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("firefox")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Dell\\Desktop\\nu10\\geckodriver.exe");

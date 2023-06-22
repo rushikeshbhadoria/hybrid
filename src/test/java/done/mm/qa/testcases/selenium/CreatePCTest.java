@@ -32,7 +32,7 @@ public class CreatePCTest extends TestBase {
 	}
 
 	@Test(invocationCount = 1)
-	public void createMasterTest() throws Exception {
+	public void createPcTest() throws Exception {
 		loginPages.Login(prop.getProperty("username"), prop.getProperty("password"));
 		
 		po.createPC();
