@@ -152,15 +152,10 @@ public class DbConnectionAndRestAssured_TestBase extends TestBase {
 		return js.get(key).toString();
 	}
 	
-	public String getJsonPath1(String response,String key)
-	{
-		JsonPath   js = new JsonPath(response);
-		return js.get(key).toString();
-	}
+	
 }
 
 
-//commet 1
 
 
 
